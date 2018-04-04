@@ -17,7 +17,7 @@
          <image>
             <Image url="@../img/resbar.jpg" />
          </image></ImageView>
-      <TableView layoutX="51.0" layoutY="125.0" opacity="0.95" prefHeight="438.0" prefWidth="800.0">
+      <TableView layoutX="157.0" layoutY="121.0" opacity="0.95" prefHeight="438.0" prefWidth="800.0">
         <columns>
           <TableColumn minWidth="0.0" prefWidth="160.0" text="N°Orden" />
           <TableColumn minWidth="0.0" prefWidth="160.0" text="Mesa" />
@@ -26,8 +26,31 @@
             <TableColumn prefWidth="160.0" text="Total" />
         </columns>
       </TableView>
-      <JFXButton layoutX="881.0" layoutY="152.0" prefHeight="75.0" prefWidth="68.0" style="-fx-background-color: white;" />
-      <JFXButton layoutX="881.0" layoutY="250.0" prefHeight="75.0" prefWidth="68.0" style="-fx-background-color: white;" />
-      <JFXButton layoutX="884.0" layoutY="344.0" prefHeight="75.0" prefWidth="68.0" style="-fx-background-color: white;" />
+      <JFXButton layoutX="986.0" layoutY="154.0" opacity="0.8" prefHeight="80.0" prefWidth="86.0">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/anadir.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton layoutX="986.0" layoutY="260.0" prefHeight="80.0" prefWidth="86.0">
+         <graphic>
+            <ImageView fitHeight="93.0" fitWidth="70.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/eliminar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnRegresar" layoutX="14.0" layoutY="41.0" onAction="#regresarIndex" opacity="0.8" prefHeight="80.0" prefWidth="86.0">
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/espalda.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
    </children>
 </AnchorPane>
