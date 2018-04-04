@@ -1,0 +1,4 @@
+*/target/*
+!/ResBar/target/
+/nb-configuration
+/nbactions

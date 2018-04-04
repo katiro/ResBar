@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="principal" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-image: barra.jpg;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sv.edu.uesocc.ingenieria.tpi_2018.paractica.resbar.FXMLController">
+    <children>
+      <ImageView fitHeight="600.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/resbar.jpg" />
+         </image></ImageView>
+      <JFXButton layoutX="304.0" layoutY="319.0" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Para llevar">
+         <graphic>
+            <ImageView fitHeight="172.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/servicio-domicilio.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="301.0" layoutY="75.0" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Comer aqui">
+         <graphic>
+            <ImageView fitHeight="172.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dish.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="DejaVu Sans Condensed Bold" size="37.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
