@@ -5,20 +5,22 @@ import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
 
 public class MainApp extends Application {
 
+    Scene index;
+   
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/index.fxml"));
-        
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("/styles/Styles.css");
-        
-        stage.setTitle("JavaFX and Maven");
-        stage.setScene(scene);
+
+        index = new Scene(root);
+        index.getStylesheets().add("/styles/Styles.css");
+
+        stage.setTitle("ResBar");
+        stage.setScene(index);
         stage.show();
     }
 

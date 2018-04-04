@@ -12,7 +12,7 @@
          <image>
             <Image url="@../img/resbar.jpg" />
          </image></ImageView>
-      <JFXButton layoutX="304.0" layoutY="319.0" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Para llevar">
+      <JFXButton fx:id="btnLlevar" layoutX="304.0" layoutY="319.0" onAction="#abrirOrdenes" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Para llevar">
          <graphic>
             <ImageView fitHeight="172.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -24,7 +24,7 @@
             <Font name="DejaVu Sans Condensed Bold" size="37.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="301.0" layoutY="75.0" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Comer aqui">
+      <JFXButton fx:id="btnComerAqui" layoutX="301.0" layoutY="75.0" onAction="#abrirOrdenes" opacity="0.75" prefHeight="216.0" prefWidth="629.0" style="-fx-background-color: white;" text="Comer aqui">
          <graphic>
             <ImageView fitHeight="172.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
                <image>
