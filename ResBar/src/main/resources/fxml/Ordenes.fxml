@@ -26,7 +26,7 @@
             <TableColumn prefWidth="160.0" text="Total" />
         </columns>
       </TableView>
-      <JFXButton layoutX="986.0" layoutY="154.0" opacity="0.8" prefHeight="80.0" prefWidth="86.0">
+      <JFXButton fx:id="btnAgregar" layoutX="986.0" layoutY="154.0" onAction="#irMenu" opacity="0.8" prefHeight="80.0" prefWidth="86.0">
          <graphic>
             <ImageView fitHeight="69.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -43,7 +43,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton fx:id="btnRegresar" layoutX="14.0" layoutY="41.0" onAction="#regresarIndex" opacity="0.8" prefHeight="80.0" prefWidth="86.0">
+      <JFXButton fx:id="btnRegresar" layoutX="14.0" layoutY="14.0" onAction="#regresarIndex" opacity="0.8" prefHeight="88.0" prefWidth="80.0">
          <graphic>
             <ImageView fitHeight="69.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
                <image>

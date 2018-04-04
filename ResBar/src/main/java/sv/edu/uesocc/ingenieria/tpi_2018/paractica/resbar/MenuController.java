@@ -1,9 +1,10 @@
+package sv.edu.uesocc.ingenieria.tpi_2018.paractica.resbar;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sv.edu.uesocc.ingenieria.tpi_2018.paractica.resbar;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,28 +23,19 @@ import javafx.stage.Stage;
  *
  * @author katiro
  */
-public class OrdenesController implements Initializable {
+public class MenuController implements Initializable {
 
-   @FXML
-    private void regresarIndex(ActionEvent e) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/index.fxml"));
-        Scene index = new Scene(root);
+     @FXML
+    private void regresarMenu(ActionEvent e) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Ordenes.fxml"));
+        Scene Ordenes = new Scene(root);
         Stage stage2= (Stage)((Node) e.getSource()).getScene().getWindow();
         stage2.setTitle("ResBar");
-        stage2.setScene(index);
+        stage2.setScene(Ordenes);
         stage2.show();
 
     }
-     @FXML
-    private void irMenu(ActionEvent e) throws IOException {
-        Parent root3 = FXMLLoader.load(getClass().getResource("/fxml/Menu.fxml"));
-        Scene Menu = new Scene(root3);
-        Stage stage3= (Stage)((Node) e.getSource()).getScene().getWindow();
-        stage3.setTitle("ResBar");
-        stage3.setScene(Menu);
-        stage3.show();
-
-    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
